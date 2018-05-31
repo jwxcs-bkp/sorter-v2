@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sorter</title>
+    <link rel="stylesheet" type="text/css" href ="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hi.</h1>
+
+      <div id="info">
+        <div class="basic">
+          <h5>Basic: Just your standard two-person ships.</h5>
+          <button onClick="choose('basic', 5)" type="button">Get Top 5</button>
+          <button onClick="choose('basic', 10)" type="button">Get Top 10</button>
+          <button onClick="choose('basic')" type="button">Rank All Items</button>
+        </div>
+        <hr />
+        <div class="extended">
+          <h5>Extended: two-person, three-person, and seven-person ships.<br/>( ͡° ͜ʖ ͡°)</h5>
+          <button onClick="choose('extended', 10)" type="button">Get Top 10</button>
+          <button onClick="choose('extended', 15)" type="button">Get Top 15</button>
+          <button onClick="choose('extended')" type="button">Rank All Items</button>
+        </div>
+        <h4>*Note: Ranking all items will take more comparisons. Totally up to you.</h4>
+      </div>
+
+      <div id="loading" class="no-display">
+        <h3>Loading your dataset, please wait.</h3>
+      </div>
+
+      <div id="comparison" class="no-display">
+        <small>Unofficial ship names from the top of my head.</small>
+        <h4>Question No. <span id="qn"></span></h4>
+        <div class="bottom choice" onClick="tie()">tie / no preference<br /></div>
+        <div class="equal">
+          <div class="row">
+            <div class="left choice" id="left" onClick="chooseLeft()"></div>
+            <div class="right choice" id="right" onClick="chooseRight()"></div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+      <div id="update" class="no-display">
+      </div>
+      <hr />
+      <div id="results" class="no-display">
+      </div>
+    </div>
+  <script src="jquery.min.js"></script>
+  <script src="bisort.js"></script>
+  </body>
+</html>

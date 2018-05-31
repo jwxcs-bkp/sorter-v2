@@ -1,0 +1,67 @@
+body {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 12px;
+  background-color: #e9e9e9;  
+}
+td.rank-data {
+  text-align: left;
+}
+td.rank {
+  text-align: right;
+}
+table.update-tbl {
+  width: 75%;
+  margin: 0 auto;
+}
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.equal {
+  display:table;
+  width: 100%;
+  height: 100px;
+}
+.row {
+  display:table-row;
+  width: 100%;
+}
+.row div {
+  display:table-cell;
+}
+.equal .row div {
+  vertical-align: middle;
+  text-align: center;
+}
+.left {
+  background-color: #bdbdbd;
+  width: 50%;
+}
+.right {
+  background-color: #d3d3d3;
+  width: 50%;
+}
+.bottom {
+  background-color: #fafafa;
+  width: 100%;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.choice {
+  cursor: pointer;
+}
+.no-display {
+  display: none;
+}
+.row-even {
+  background-color: #bdbdbd;
+}
+.row-odd {
+  background-color: #d3d3d3;
+}
+.rank {
+  width: 20%;
+}
